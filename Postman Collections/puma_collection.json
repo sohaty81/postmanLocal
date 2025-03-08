@@ -66,7 +66,105 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"id": "bd125728-c339-4dce-b4aa-298b9d7cb25d",
+					"name": "GetPageWidgts",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pageId\": \"216\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://puma.magento2.local/rest/V1/widgets/page/",
+							"protocol": "https",
+							"host": [
+								"puma",
+								"magento2",
+								"local"
+							],
+							"path": [
+								"rest",
+								"V1",
+								"widgets",
+								"page",
+								""
+							],
+							"query": [
+								{
+									"key": "wer",
+									"value": "we",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Mar 2025 09:35:02 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=s1p7dhr9lk0uhntnihmlltpjlg; expires=Sat, 15-Mar-2025 08:15:01 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Sohaty FBH W\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    },\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\"\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Second Sohaty FBH\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "Homepage",
