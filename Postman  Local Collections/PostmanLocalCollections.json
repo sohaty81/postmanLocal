@@ -1,0 +1,297 @@
+{
+	"info": {
+		"_postman_id": "ec6e0baf-0a9a-4bf8-9b2a-79b4163f740b",
+		"name": "Local",
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Widgets",
+			"item": [
+				{
+					"name": "Get Widgets For Page",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the appropriate Content-Type header\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"pm.test(\"Response body is an array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    pm.expect(responseData).to.be.an('array');",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "f6bd4810-d0a6-4e10-b2a5-b9aaa1f2eaf4"
+							}
+						}
+					],
+					"id": "f75409e5-70fb-42d1-b4ab-1e2aeb9018d2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"pageId\":  {{page_id}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}V1/widgets/page"
+					},
+					"response": [
+						{
+							"id": "7cc0f646-4e04-4adf-9fa8-9f4f9af701db",
+							"name": "Get Widgets For Page",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pageId\":  {{page_id}}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}V1/widgets/page"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Mar 2025 07:51:44 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "PHPSESSID=q66fsrggg8mamshn9c7h7esvh8; expires=Sat, 15-Mar-2025 06:31:44 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Sohaty FBH W\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    },\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\"\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Second Sohaty FBH\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Get Widgets For Category",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the appropriate Content-Type header\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response body is an array\", function () {",
+									"    const responseData = pm.response.json();",
+									"    pm.expect(responseData).to.be.an('array');",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {},
+								"id": "cf16970f-9fe9-407d-a7cf-ffd60347e4a0"
+							}
+						}
+					],
+					"id": "e8d85ecd-603c-44ca-823f-e0ab55d96cd4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryId\": {{category_id}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}V1/widgets/category",
+						"description": "\n### Create Widget Category\n\nThis endpoint allows you to create a new widget category.\n\n**Request Body**\n- `categoryId` (number) - The ID of the category.\n\n#### Response\nUpon successful creation, the response will be an empty JSON array.\n\n"
+					},
+					"response": []
+				}
+			],
+			"id": "e573ee04-2e61-4f6b-a2cd-e9772fce407c",
+			"auth": {
+				"type": "bearer",
+				"bearer": {
+					"token": "{{token}}"
+				}
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						],
+						"id": "4a09c641-d460-4aa0-8836-555d2682cfe0"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						],
+						"id": "655881d8-3f36-478e-8943-772e4cd78390"
+					}
+				}
+			]
+		},
+		{
+			"name": "Homepage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the appropriate Content-Type header\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"pm.test(\"Response body is an array\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('array');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"id": "caacb489-d6f2-47eb-9583-c3a72fe17d65"
+					}
+				}
+			],
+			"id": "0ed823bf-1504-4b34-8b62-62611d601c5d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "store-code",
+						"value": "uk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{base_url}}V1/homepage"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "17d47283-5976-42f0-9f2e-d7b1d5e1988c"
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				],
+				"id": "32816de4-694d-4c34-8711-1e425f6b5888"
+			}
+		}
+	]
+}
