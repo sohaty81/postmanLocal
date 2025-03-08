@@ -1,0 +1,68 @@
+{
+	"info": {
+		"_postman_id": "8022c681-f306-4614-a4f1-b1f68a0da8d9",
+		"name": "Omnicore Puma",
+		"schema": "https://schema.postman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CategoryWidgets",
+			"id": "fce4a61a-133c-4fbf-91b3-c8cc2c05dd58",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetPageWidgts",
+			"id": "9ac32f1f-01ee-4086-ab75-715477310b2a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pageId\": \"216\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://puma.magento2.local/rest/V1/widgets/page/"
+			},
+			"response": []
+		},
+		{
+			"name": "Homepage",
+			"id": "af3eb8e2-2216-4faa-80ef-0990ccea66ec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "ob04px7pjc5v6ofgkbglgff0ulyopvmu"
+					}
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "store-code",
+						"value": "uk",
+						"type": "text"
+					}
+				],
+				"url": "https://puma.magento2.local/rest/V1/homepage"
+			},
+			"response": []
+		}
+	]
+}
