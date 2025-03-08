@@ -24,6 +24,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "ob04px7pjc5v6ofgkbglgff0ulyopvmu"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -35,7 +41,30 @@
 						}
 					}
 				},
-				"url": "https://puma.magento2.local/rest/V1/widgets/page/"
+				"url": {
+					"raw": "https://puma.magento2.local/rest/V1/widgets/page/",
+					"protocol": "https",
+					"host": [
+						"puma",
+						"magento2",
+						"local"
+					],
+					"path": [
+						"rest",
+						"V1",
+						"widgets",
+						"page",
+						""
+					],
+					"query": [
+						{
+							"key": "wer",
+							"value": "we",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				}
 			},
 			"response": []
 		},
