@@ -6,6 +6,11 @@
 	},
 	"item": [
 		{
+			"name": "New Folder",
+			"item": [],
+			"id": "dd9e9b20-4537-4353-ac5f-f0d71d206547"
+		},
+		{
 			"name": "CategoryWidgets",
 			"id": "015b9d9d-afa7-4c7c-ac56-ce15839d1373",
 			"protocolProfileBehavior": {
