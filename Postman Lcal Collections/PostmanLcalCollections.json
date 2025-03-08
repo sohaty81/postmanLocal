@@ -6,77 +6,34 @@
 	},
 	"item": [
 		{
-			"name": "New Folder",
-			"item": [],
-			"id": "dd9e9b20-4537-4353-ac5f-f0d71d206547"
-		},
-		{
-			"name": "CategoryWidgets",
-			"id": "015b9d9d-afa7-4c7c-ac56-ce15839d1373",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": ""
-			},
-			"response": []
-		},
-		{
-			"name": "GetPageWidgts",
-			"id": "d02d3b9b-6f8f-4f24-b291-d349208bab5a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": {
-						"token": "ob04px7pjc5v6ofgkbglgff0ulyopvmu"
-					}
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"pageId\": \"216\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "https://puma.magento2.local/rest/V1/widgets/page/",
-					"protocol": "https",
-					"host": [
-						"puma",
-						"magento2",
-						"local"
-					],
-					"path": [
-						"rest",
-						"V1",
-						"widgets",
-						"page",
-						""
-					],
-					"query": [
-						{
-							"key": "wer",
-							"value": "we",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": [
+			"name": "Widgets",
+			"item": [
 				{
-					"id": "3786a451-44e5-4cd3-90fc-7f5e1c6e21b3",
+					"name": "CategoryWidgets",
+					"id": "015b9d9d-afa7-4c7c-ac56-ce15839d1373",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
 					"name": "GetPageWidgts",
-					"originalRequest": {
+					"id": "d02d3b9b-6f8f-4f24-b291-d349208bab5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "ob04px7pjc5v6ofgkbglgff0ulyopvmu"
+							}
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -113,64 +70,108 @@
 							]
 						}
 					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
+					"response": [
 						{
-							"key": "Server",
-							"value": "nginx"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 08 Mar 2025 09:35:02 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "Expires",
-							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Set-Cookie",
-							"value": "PHPSESSID=s1p7dhr9lk0uhntnihmlltpjlg; expires=Sat, 15-Mar-2025 08:15:01 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "SAMEORIGIN"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-store"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
+							"id": "3786a451-44e5-4cd3-90fc-7f5e1c6e21b3",
+							"name": "GetPageWidgts",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"pageId\": \"216\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://puma.magento2.local/rest/V1/widgets/page/",
+									"protocol": "https",
+									"host": [
+										"puma",
+										"magento2",
+										"local"
+									],
+									"path": [
+										"rest",
+										"V1",
+										"widgets",
+										"page",
+										""
+									],
+									"query": [
+										{
+											"key": "wer",
+											"value": "we",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Mar 2025 09:35:02 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "Expires",
+									"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+								},
+								{
+									"key": "Pragma",
+									"value": "no-cache"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "PHPSESSID=s1p7dhr9lk0uhntnihmlltpjlg; expires=Sat, 15-Mar-2025 08:15:01 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-store"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								}
+							],
+							"cookie": [],
+							"responseTime": null,
+							"body": "[\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Sohaty FBH W\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    },\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\"\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Second Sohaty FBH\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    }\n]"
 						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Sohaty FBH W\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    },\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\"\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Second Sohaty FBH\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    }\n]"
+					]
 				}
-			]
+			],
+			"id": "dd9e9b20-4537-4353-ac5f-f0d71d206547"
 		},
 		{
 			"name": "Homepage",
