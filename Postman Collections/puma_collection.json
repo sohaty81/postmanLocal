@@ -15,7 +15,82 @@
 				"method": "GET",
 				"header": []
 			},
-			"response": []
+			"response": [
+				{
+					"id": "668bbb24-0be1-43b2-8d26-9bd748ccdd72",
+					"name": "CategoryWidgets",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"categoryId\": 422\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://puma.magento2.local/rest/V1/widgets/category/"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 17:18:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=grl5ejgpp0j35aji949k9cn6ji; expires=Sun, 16-Mar-2025 15:58:17 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "[\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\",\n            \"pc_products\": {\n                \"366397\": {\n                    \"name\": \"Черевики Pacer Next SB WTR – Puma Black-Puma Black-Whisper White – 40.5\",\n                    \"regular_price\": 3190,\n                    \"special_price\": 1590,\n                    \"image\": \"https://images.puma.net/images/366936/01/sv01/fnd/UKR/\",\n                    \"sku\": \"4059506503078\"\n                },\n                \"366398\": {\n                    \"name\": \"Черевики Pacer Next SB WTR – Puma Black-Puma Black-Whisper White – 46\",\n                    \"regular_price\": 3190,\n                    \"special_price\": 1590,\n                    \"image\": \"https://images.puma.net/images/366936/01/sv01/fnd/UKR/\",\n                    \"sku\": \"4059506501562\"\n                }\n            }\n        }\n    },\n    {\n        \"video\": {\n            \"v_title\": \"Video Widget Title2\",\n            \"v_title_2\": \"Video Widget Title1\",\n            \"v_text\": \"Video Widget Text2\",\n            \"v_text_2\": \"Video Widget Text1\",\n            \"v_mobile_video_file\": \"https://puma.magento2.local/media/contentmanager/content/3.2K_PUMA_NAVI_seek_studio_1_.mp4\"\n        }\n    },\n    {\n        \"trending_inline_group\": {\n            \"title\": \"Sohaty UA_AW23_OTH_Holiday_TrendingInlineGroup _landing 3_13_12_2023\",\n            \"tig_content\": {\n                \"4310\": [\n                    {\n                        \"trending_inline_item\": {\n                            \"tii_title\": \"ТЕПЛІ<br>РЕЧІ\",\n                            \"tli_title_2\": \"titl 2 \",\n                            \"tii_text\": \"tesxt\",\n                            \"tli_text_2\": \"text2\",\n                            \"tii_url\": \"https://puma.magento2.local/uk/\",\n                            \"tii_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1536x1536_3_3.jpg\",\n                            \"tii_btn1_url\": \"https://puma.magento2.local/uk/sportivnye-tovary-dlja-muzhchin/winterized.html\",\n                            \"tii_btn2\": \"ДЛЯ НЕЇ\",\n                            \"tii_btn2_url\": \"https://puma.magento2.local/uk/sportivnye-tovary-dlja-zhenshhin/winterized.html\"\n                        }\n                    }\n                ],\n                \"4311\": [\n                    {\n                        \"trending_inline_item\": {\n                            \"tii_title\": \"КОЛЕКЦІЇ<br>SELECT/LIFESTYLE \",\n                            \"tli_title_2\": \"\",\n                            \"tii_text\": \"\",\n                            \"tli_text_2\": \"\",\n                            \"tii_url\": \"https://puma.magento2.local/uk/\",\n                            \"tii_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1536x1536_1_17.jpg\",\n                            \"tii_btn1_url\": \"https://puma.magento2.local/uk/kollaboracii.html?gender=1/\",\n                            \"tii_btn2\": \"ДЛЯ НЕЇ\",\n                            \"tii_btn2_url\": \"https://puma.magento2.local/uk/kollaboracii.html?gender=2/\"\n                        }\n                    }\n                ],\n                \"4312\": [\n                    {\n                        \"trending_inline_item\": {\n                            \"tii_title\": \"СПОРТИВНИЙ<br>СТИЛЬ\",\n                            \"tli_title_2\": \"\",\n                            \"tii_text\": \"\",\n                            \"tli_text_2\": \"\",\n                            \"tii_url\": \"https://puma.magento2.local/uk/\",\n                            \"tii_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1536x1536_2_6.jpg\",\n                            \"tii_btn1_url\": \"https://puma.magento2.local/uk/sport.html?gender=1/\",\n                            \"tii_btn2\": \"ДЛЯ НЕЇ\",\n                            \"tii_btn2_url\": \"https://puma.magento2.local/uk/sport.html?gender=2/\"\n                        }\n                    }\n                ]\n            }\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"PALERMO\",\n            \"fbh_title_2\": \"title 2\",\n            \"fbh_text\": \"ВИБІР ДУА ЛІПА\",\n            \"fbh_text_2\": \"text mob 2\",\n            \"fbh_url\": \"https://puma.magento2.local/uk/kollaboracii/lifestyle/select-palermo.html\",\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/24SS_Ecom_SP_Palermo-Dua-Lipa_FullBleedHero_TabMob_1536x1536_1_1.jpg\",\n            \"fbh_mobile_btn1\": \"КУПИТИ\",\n            \"fbh_mobile_btn1_url\": \"https://puma.magento2.local/uk/kollaboracii/lifestyle/select-palermo.html\",\n            \"fbh_mobile_btn2\": \"Buy\",\n            \"fbh_mobile_btn2_url\": \"https://puma.magento2.local/uk/kollaboracii/lifestyle/select-palermo2.html\"\n        }\n    }\n]"
+				}
+			]
 		},
 		{
 			"name": "GetPageWidgts",
@@ -66,105 +141,7 @@
 					]
 				}
 			},
-			"response": [
-				{
-					"id": "bd125728-c339-4dce-b4aa-298b9d7cb25d",
-					"name": "GetPageWidgts",
-					"originalRequest": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n    \"pageId\": \"216\"\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "https://puma.magento2.local/rest/V1/widgets/page/",
-							"protocol": "https",
-							"host": [
-								"puma",
-								"magento2",
-								"local"
-							],
-							"path": [
-								"rest",
-								"V1",
-								"widgets",
-								"page",
-								""
-							],
-							"query": [
-								{
-									"key": "wer",
-									"value": "we",
-									"type": "text",
-									"disabled": true
-								}
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Server",
-							"value": "nginx"
-						},
-						{
-							"key": "Date",
-							"value": "Sat, 08 Mar 2025 09:35:02 GMT"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json; charset=utf-8"
-						},
-						{
-							"key": "Transfer-Encoding",
-							"value": "chunked"
-						},
-						{
-							"key": "Connection",
-							"value": "keep-alive"
-						},
-						{
-							"key": "Vary",
-							"value": "Accept-Encoding"
-						},
-						{
-							"key": "Expires",
-							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
-						},
-						{
-							"key": "Pragma",
-							"value": "no-cache"
-						},
-						{
-							"key": "Set-Cookie",
-							"value": "PHPSESSID=s1p7dhr9lk0uhntnihmlltpjlg; expires=Sat, 15-Mar-2025 08:15:01 GMT; Max-Age=600000; path=/; domain=puma.magento2.local; secure; HttpOnly"
-						},
-						{
-							"key": "X-Frame-Options",
-							"value": "SAMEORIGIN"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-store"
-						},
-						{
-							"key": "Content-Encoding",
-							"value": "gzip"
-						}
-					],
-					"cookie": [],
-					"responseTime": null,
-					"body": "[\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Sohaty FBH W\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    },\n    {\n        \"product_carousel\": {\n            \"pc_title\": \"Sohaty MobileApp Product Carousel\"\n        }\n    },\n    {\n        \"full_bleed_hero\": {\n            \"fbh_title\": \"Second Sohaty FBH\",\n            \"fbh_title_2\": \"Sohaty FBH 2\",\n            \"fbh_text\": \"Sohaty FBH Text\",\n            \"fbh_text_2\": \"Sohaty FBH Text 2\",\n            \"fbh_url\": null,\n            \"fbh_mobile_img\": \"https://puma.magento2.local/media/contentmanager/content/1.jpeg\",\n            \"fbh_mobile_btn1\": null,\n            \"fbh_mobile_btn1_url\": null,\n            \"fbh_mobile_btn2\": null,\n            \"fbh_mobile_btn2_url\": null\n        }\n    }\n]"
-				}
-			]
+			"response": []
 		},
 		{
 			"name": "Homepage",
@@ -190,6 +167,36 @@
 				"url": "https://puma.magento2.local/rest/V1/homepage"
 			},
 			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "ob04px7pjc5v6ofgkbglgff0ulyopvmu"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d2556906-be5f-48a6-ab06-567a7a20af6f",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6347eb80-202f-49a1-8042-b1adc9b18e2d",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
