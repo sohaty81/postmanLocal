@@ -16,7 +16,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"categoryId\": {{categoryId}}\n}",
+					"raw": "{\n    \"categoryIdA\": {{categoryId}}\n}",
 					"options": {
 						"raw": {
 							"language": "json"
